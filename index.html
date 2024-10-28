@@ -3,28 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>GUINNESS SHORTAGE CALCULATOR</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>GUINESS SHORTAGE CALCULATOR</title>
 </head>
-<body style="background-color: blue;">
+<body>
     <main>
         <section>
-            <img src="./asset/logo.png" alt="logo">
-            <h1>Guinness shortage calculator</h1>
             <section>
-                <select name="12-categories" id="">
-                    <option value="12-categories">12-categories</option>
-                    <option value="orijin tiger">orijin-tiger-12</option>
-                    <option value="smirnoff choco 75cl">smirnoff-choco75cl-12</option>
-                    <option value="gordon75cl">gordon-75cl-12</option>
-                    <option value="large stout">large-stout-12</option>
-                    <option value="harp drink">harp-drink-12</option>
-                    <option value="ice large">ice-large-12</option>
-                    <option value="orijin large">orijin-large-12</option>
-                </select>
+                <img src="./asset/logo.png" alt="logo">
+                <h1>GUINESS SHORTAGE CALCULATOR</h1>
             </section>
+            <label for="number_of_items">number of items</label> <br />
+            <input type="text" name="number_of_items" id="number_of_items"> <br/>
+            <label for="wob">WOB</label> <br />
+            <input type="text" id="wob" name="wob">
+            <section>
+                <section>
+                    <label for="good_pack">packs</label> <br />
+                    <input type="text" id="good_pack" name="good_pack">
+                </section>
+                <section>
+                    <p>good</p>
+                    <label for="good_can">cans</label> <br />
+                    <input type="text" id="good_can" name="good_can">
+                </section>
+            </section>
+            <section>
+                <section>
+                    <label for="bad_pack">packs</label> <br />
+                    <input type="text" id="bad_pack" name="bad_pack">
+                </section>
+                <section>
+                    <p>bad</p>
+                    <label for="bad_can">cans</label> <br />
+                    <input type="text" id="bad_can" name="bad_can">
+                </section>
+            </section>
+            <label for="not_return_or_missing">not returned/missing</label> <br />
+            <input type="text" name="not_return_or_missing" id="not_return_or_missing"> <br/>
+            <button id="cal"><img src="./asset/logo.png" alt="calculator">calculate shortage</button>
         </section>
-        <section></section>
+        <section>
+            <div id="result"></div>
+        </section>
     </main>
+    <script src="./script/script.js"></script>
 </body>
 </html>
