@@ -8,7 +8,7 @@
 </head>
 <body>
     <main>
-        <section>
+        <section class="shortage__cal--section">
             <section>
                 <img src="./asset/logo.png" alt="logo">
                 <h1>GUINESS SHORTAGE CALCULATOR</h1>
@@ -44,62 +44,70 @@
             <label for="wob">WOB</label> <br />
             <input type="text" id="wob" name="wob">
             <section>
-                <section>
-                    <label for="good_pack">packs</label> <br />
-                    <input type="text" id="good_pack" name="good_pack">
-                </section>
-                <section>
-                    <p>good</p>
-                    <label for="good_can">cans</label> <br />
-                    <input type="text" id="good_can" name="good_can">
+                <p>good</p>
+                <section class="good">
+                    <section>
+                        <label for="good_pack">packs</label> <br />
+                        <input type="text" id="good_pack" name="good_pack">
+                    </section>
+                    <section>
+                        <label for="good_can">cans</label> <br />
+                        <input type="text" id="good_can" name="good_can">
+                    </section>
                 </section>
             </section>
             <section>
-                <section>
-                    <label for="bad_pack">packs</label> <br />
-                    <input type="text" id="bad_pack" name="bad_pack">
-                </section>
-                <section>
-                    <p>bad</p>
-                    <label for="bad_can">cans</label> <br />
-                    <input type="text" id="bad_can" name="bad_can">
+                <p>bad</p>
+                <section class="bad">
+                    <section>
+                        <label for="bad_pack">packs</label> <br />
+                        <input type="text" id="bad_pack" name="bad_pack">
+                    </section>
+                    <section>
+                        <label for="bad_can">cans</label> <br />
+                        <input type="text" id="bad_can" name="bad_can">
+                    </section>
                 </section>
             </section>
             <label for="not_return_or_missing">not returned/missing</label> <br />
             <input type="text" name="not_return_or_missing" id="not_return_or_missing"> <br/>
             <button id="cal"><img src="./asset/logo.png" alt="calculator">calculate shortage</button>
         </section>
-        <section>
+        <section class="result__section">
             <div id="result"></div>
             <h1>Your result will appear here..</h1>
             <section>
                 <h2></h2>
-                <section>
-                    <section>
+                <section class="fin">
+                    <section class="final">
                         <section>
                             <h3>wob</h3>
-                            <p></p>
+                            <p>0</p>
                         </section>
                         <section>
                             <h3>packs</h3>
-                            <p></p>
+                            <p>0</p>
                         </section>
                         <section>
                             <h3>cans</h3>
-                            <p></p>
+                            <p>0</p>
                         </section>
                         <section>
-                            <h3>missing/not returned</h3>
-                            <p></p>
+                            <h3>m/not ret</h3>
+                            <p>0</p>
                         </section>
                     </section>
                     <section>
-                        <p>total in can</p>
+                        <h3>total in can</h3>
+                        <p>0</p>
                     </section>
                 </section>
             </section>
         </section>
     </main>
+    <footer>
+        <small>guinness Nigeria PLC &copy; 2024</small>
+    </footer>
     <script src="./script/script.js"></script>
 </body>
 </html>

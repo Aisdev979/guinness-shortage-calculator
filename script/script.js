@@ -9,6 +9,7 @@
     const badPack = document.querySelector('#bad_pack');
     const badCan = document.querySelector('#bad_can');
     const notReturnedOrMissing = document.querySelector('#not_return_or_missing');
+    const para = document.querySelectorAll('p')
     const cal = document.querySelector('#cal');
     const finalResult = document.querySelector('#result');
 
@@ -22,8 +23,13 @@
                 let remainingCans = canConvertion - +goodCan.value - +badCan.value
                 let finalPack = Math.floor(remainingCans / 24);
                 let finalCan = remainingCans - finalPack * 24;
+                let totalCan = (+wob.value * 24) + (finalPack * 24) + (+notReturnedOrMissing.value * 24) + finalCan;
         
-                finalResult.textContent = `wob: ${+wob.value}, packs: ${finalPack}, cans: ${finalCan}`
+                para[2].textContent = +wob.value;
+                para[3].textContent = finalPack;
+                para[4].textContent = finalCan;
+                para[5].textContent = +notReturnedOrMissing.value;
+                para[6].textContent = totalCan;
             })
         })
     }
