@@ -46,6 +46,10 @@ button img {
     
 }
 
+h2 {
+    padding: 0 1em;
+}
+
 footer {
     padding: 1em;
     text-align: center;
@@ -54,6 +58,7 @@ footer {
 
 .shortage__cal--section {
     padding: 1em;
+    width: 100%;
 }
 
 .shortage__cal--section section {
@@ -62,6 +67,7 @@ footer {
 
 .good,
 .bad {
+
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -69,6 +75,13 @@ footer {
 
 .result__section {
     background-color: var(--secondary);
+    width: 100%;
+    padding: 3em 0;
+}
+
+.result__section h1 {
+    padding-bottom: 1em;
+    text-align: center;
 }
 
 .fin {
