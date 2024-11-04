@@ -9,69 +9,71 @@
 <body>
     <main>
         <section class="shortage__cal--section">
-            <section>
-                <img src="./asset/logo.png" alt="logo">
-                <h1>GUINESS SHORTAGE CALCULATOR</h1>
-            </section>
-            <section>
-                <select name="12_categories" id="twelve_categories">
-                    <option value="12 categories">12 categories</option>
-                    <option value="Orijin Tiger">Orijin Tiger</option>
-                    <option value="Smirnoff Choco 75cl">Smirnoff Choco 75cl</option>
-                    <option value="Gordon 75cl">Gordon 75cl</option>
-                    <option value="L/S">L/S</option>
-                    <option value="Harp">Harp</option>
-                    <option value="Ice(L)">Ice(L)</option>
-                    <option value="Orijin(L)">Orijin(L)</option>
-                </select>
-                <select name="18_categories" id="eighteen_categories">
-                    <option value="18 categories">18 categories</option>
-                    <option value="M/S">M/S</option>
-                </select>
-                <select name="24_categories" id="twentyfour_categories">
-                    <option value="24 categories">24 categories</option>
-                    <option value="Orijin Bitters 20cl">Orijin Bitters 20cl</option>
-                    <option value="S/S">S/S</option>
-                    <option value="Ice(S)">Ice(S)</option>
-                    <option value="Orijin">Orijin</option>
-                    <option value="M/G">M/G</option>
-                    <option value="D/M">D/M</option>
-                    <option value="D/Mornach">D/Mornach</option>
-                </select>
-            </section>
-            <label for="number_of_items">number of items</label> <br />
-            <input type="text" name="number_of_items" id="number_of_items"> <br/>
-            <label for="wob">WOB</label> <br />
-            <input type="text" id="wob" name="wob">
-            <section>
-                <p>good</p>
-                <section class="good">
-                    <section>
-                        <label for="good_pack">packs</label> <br />
-                        <input type="text" id="good_pack" name="good_pack">
-                    </section>
-                    <section>
-                        <label for="good_can">cans</label> <br />
-                        <input type="text" id="good_can" name="good_can">
+            <section class="section">
+                <section class="heading">
+                    <img src="./asset/logo.png" alt="logo">
+                    <h1>GUINESS SHORTAGE CALCULATOR</h1>
+                </section>
+                <section>
+                    <select name="12_categories" id="twelve_categories">
+                        <option value="12 categories">12 categories</option>
+                        <option value="Orijin Tiger">Orijin Tiger</option>
+                        <option value="Smirnoff Choco 75cl">Smirnoff Choco 75cl</option>
+                        <option value="Gordon 75cl">Gordon 75cl</option>
+                        <option value="L/S">L/S</option>
+                        <option value="Harp">Harp</option>
+                        <option value="Ice(L)">Ice(L)</option>
+                        <option value="Orijin(L)">Orijin(L)</option>
+                    </select>
+                    <select name="18_categories" id="eighteen_categories">
+                        <option value="18 categories">18 categories</option>
+                        <option value="M/S">M/S</option>
+                    </select>
+                    <select name="24_categories" id="twentyfour_categories">
+                        <option value="24 categories">24 categories</option>
+                        <option value="Orijin Bitters 20cl">Orijin Bitters 20cl</option>
+                        <option value="S/S">S/S</option>
+                        <option value="Ice(S)">Ice(S)</option>
+                        <option value="Orijin">Orijin</option>
+                        <option value="M/G">M/G</option>
+                        <option value="D/M">D/M</option>
+                        <option value="D/Mornach">D/Mornach</option>
+                    </select>
+                </section>
+                <label for="number_of_items">number of items</label> <br />
+                <input type="text" name="number_of_items" id="number_of_items"> <br/>
+                <label for="wob">WOB</label> <br />
+                <input type="text" id="wob" name="wob">
+                <section>
+                    <p>good</p>
+                    <section class="good">
+                        <section>
+                            <label for="good_pack">packs</label> <br />
+                            <input type="text" id="good_pack" name="good_pack">
+                        </section>
+                        <section>
+                            <label for="good_can">cans</label> <br />
+                            <input type="text" id="good_can" name="good_can">
+                        </section>
                     </section>
                 </section>
-            </section>
-            <section>
-                <p>bad</p>
-                <section class="bad">
-                    <section>
-                        <label for="bad_pack">packs</label> <br />
-                        <input type="text" id="bad_pack" name="bad_pack">
-                    </section>
-                    <section>
-                        <label for="bad_can">cans</label> <br />
-                        <input type="text" id="bad_can" name="bad_can">
+                <section>
+                    <p>bad</p>
+                    <section class="bad">
+                        <section>
+                            <label for="bad_pack">packs</label> <br />
+                            <input type="text" id="bad_pack" name="bad_pack">
+                        </section>
+                        <section>
+                            <label for="bad_can">cans</label> <br />
+                            <input type="text" id="bad_can" name="bad_can">
+                        </section>
                     </section>
                 </section>
+                <label for="not_return_or_missing">not returned/missing</label> <br />
+                <input type="text" name="not_return_or_missing" id="not_return_or_missing"> <br/>
+                <button id="cal"><img src="./asset/logo.png" alt="calculator">calculate shortage</button>
             </section>
-            <label for="not_return_or_missing">not returned/missing</label> <br />
-            <input type="text" name="not_return_or_missing" id="not_return_or_missing"> <br/>
-            <button id="cal"><img src="./asset/logo.png" alt="calculator">calculate shortage</button>
         </section>
         <section class="result__section">
             <h1>Your result will appear here..</h1>
@@ -96,7 +98,7 @@
                             <p>0</p>
                         </section>
                     </section>
-                    <section>
+                    <section class="total--convertion">
                         <h3>total in can</h3>
                         <p>0</p>
                     </section>

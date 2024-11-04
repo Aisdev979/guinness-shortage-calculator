@@ -20,7 +20,7 @@ body {
 
 
 
-img {
+/* img {
     width: 80px;
 }
 
@@ -110,5 +110,122 @@ footer {
 #not_return_or_missing {
     width: 100%;
     margin-bottom: 2em;
+} */
+
+.shortage__cal--section {
+    background-color: white;
 }
 
+.shortage__cal--section p {
+    padding-bottom: 1em;
+    font-weight: 800;
+}
+
+.section {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 900;
+    padding: 1em 0;
+}
+
+.heading img {
+    width: 45px;
+    height: 45px;
+    background-color: var(--primary);
+    border-radius: 50%;
+}
+
+select {
+    width: 100%;
+    margin: 0.5em 0;
+    padding: 1em 0;
+    border-radius: 0.5em;
+    font-weight: 600;
+}
+
+label {
+    font-weight: 700;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 0.5em;
+    margin: 0 0 2em 0;
+    border: 1px solid var(--text);
+    border-radius: 0.5em;
+    font-size: 1.5rem;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    background-color: var(--accent);
+    border: none;
+    border-radius: 0.5em;
+    padding-right: 0.5em;
+    font-weight: 600;
+    box-shadow: 3px 3px 3px var(--primary);
+    margin-bottom: 2em;
+}
+
+button img {
+    width: 40px;
+}
+
+.result__section {
+    background-color: var(--primary);
+    padding: 3em 0;
+}
+
+.result__section h1 {
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+h2 {
+    padding: 0 0 1em 1em;
+    font-weight: 700;
+}
+
+.fin {
+    background-color: var(--secondary);
+    width: 93%;
+    margin: 0 auto;
+    padding: 2em;
+    border-radius: 1em;
+    box-shadow: 5px 5px 5px var(--primary);
+}
+
+.final {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 2em;
+    border-bottom: 2px solid var(--text);
+
+}
+
+.final h3,
+.final p {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.total--convertion {
+    padding-top: 1em;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--secondary);
+    padding: 1em;
+    font-weight: 600;
+
+}
