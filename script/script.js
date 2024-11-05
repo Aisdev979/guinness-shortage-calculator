@@ -11,11 +11,12 @@
     const notReturnedOrMissing = document.querySelector('#not_return_or_missing');
     const para = document.querySelectorAll('p');
     const drinksName = document.querySelector('h2');
-    const cal = document.querySelector('#cal');
+    const warning = document.querySelector('.warning')
+    const btn = document.querySelectorAll('button')
 
     const twentyFourCategories = () => {
         twentyFourCat.addEventListener('change', () => {
-            cal.addEventListener('click', () => {
+            btn[1].addEventListener('click', () => {
                 let twentyFourValue = twentyFourCat.value
                 console.log(twentyFourValue)
                 let remainingPacks = +numberOfItems.value - +wob.value - +goodPack.value - +badPack.value - +notReturnedOrMissing.value;
@@ -26,18 +27,26 @@
                 let totalCan = (+wob.value * 24) + (finalPack * 24) + (+notReturnedOrMissing.value * 24) + finalCan;
         
                 drinksName.textContent = twentyFourCat.value
-                para[2].textContent = +wob.value;
-                para[3].textContent = finalPack;
-                para[4].textContent = finalCan;
-                para[5].textContent = +notReturnedOrMissing.value;
-                para[6].textContent = totalCan;
+                para[3].textContent = +wob.value;
+                para[4].textContent = finalPack;
+                para[5].textContent = finalCan;
+                para[6].textContent = +notReturnedOrMissing.value;
+                para[7].textContent = totalCan;
+
+                if(+wob.value >= 11 || +notReturnedOrMissing.value || finalPack) {
+                    warning.classList.add('warn')
+                }
+
+                btn[0].addEventListener('click', () => {
+                    warning.classList.remove('warn')
+                })
             })
         })
     }
 
     const eighteenCategories = () => {
         eighteenCat.addEventListener('change', () => {
-            cal.addEventListener('click', () => {
+            btn[1].addEventListener('click', () => {
                 let eighteenValue = eighteenCat.value
                 console.log(eighteenValue)
                 let remainingPacks = +numberOfItems.value - +wob.value - +goodPack.value - +badPack.value - +notReturnedOrMissing.value;
@@ -48,19 +57,26 @@
                 let totalCan = (+wob.value * 18) + (finalPack * 18) + (+notReturnedOrMissing.value * 18) + finalCan;
         
                 drinksName.textContent = eighteenCat.value
-                para[2].textContent = +wob.value;
-                para[3].textContent = finalPack;
-                para[4].textContent = finalCan;
-                para[5].textContent = +notReturnedOrMissing.value;
-                para[6].textContent = totalCan;
-                finalResult.textContent = `wob: ${+wob.value}, packs: ${finalPack}, cans: ${finalCan}`;
+                para[3].textContent = +wob.value;
+                para[4].textContent = finalPack;
+                para[5].textContent = finalCan;
+                para[6].textContent = +notReturnedOrMissing.value;
+                para[7].textContent = totalCan;
+                
+                if(+wob.value >= 11 || +notReturnedOrMissing.value || finalPack) {
+                    warning.classList.add('warn')
+                }
+
+                btn[0].addEventListener('click', () => {
+                    warning.classList.remove('warn')
+                })
             })
         })
     }
 
     const twelveCategories = () => {
         twelveCat.addEventListener('change', () => {
-            cal.addEventListener('click', ()=> {
+            btn[1].addEventListener('click', ()=> {
                 let twelveValue = twelveCat.value
                 console.log(twelveValue)
                 let remainingPacks = +numberOfItems.value - +wob.value - +goodPack.value - +badPack.value - +notReturnedOrMissing.value;
@@ -71,12 +87,18 @@
                 let totalCan = (+wob.value * 12) + (finalPack * 12) + (+notReturnedOrMissing.value * 12) + finalCan;
         
                 drinksName.textContent = twelveCat.value
-                para[2].textContent = +wob.value;
-                para[3].textContent = finalPack;
-                para[4].textContent = finalCan;
-                para[5].textContent = +notReturnedOrMissing.value;
-                para[6].textContent = totalCan;
-                finalResult.textContent = `wob: ${+wob.value}, packs: ${finalPack}, cans: ${finalCan}`
+                para[3].textContent = +wob.value;
+                para[4].textContent = finalPack;
+                para[5].textContent = finalCan;
+                para[6].textContent = +notReturnedOrMissing.value;
+                para[7].textContent = totalCan;
+                if(+wob.value >= 11 || +notReturnedOrMissing.value || finalPack) {
+                    warning.classList.add('warn');
+                }
+
+                btn[0].addEventListener('click', () => {
+                    warning.classList.remove('warn');
+                })
             })
             
         })
