@@ -141,6 +141,10 @@ footer {
     border-radius: 50%;
 }
 
+h1 {
+    font-size: 1.3rem;
+}
+
 select {
     width: 100%;
     margin: 0.5em 0;
@@ -170,7 +174,7 @@ input[type="text"] {
     padding: 1em;
     line-height: 1.5em;
     position: absolute;
-    top: -50%;
+    top: 130%;
     display: none;
     transform: translate(20%, 50%);
     transition: all 10ms linear;
@@ -259,5 +263,28 @@ footer {
     background-color: var(--secondary);
     padding: 1em;
     font-weight: 600;
+}
 
+@media screen and (min-width: 40em) {
+    main {
+        display: flex;
+        justify-content: center;
+        margin: 4em;
+    }
+
+    .fin {
+        margin-top: 10em;
+    }
+
+    .shortage__cal--section {
+        border-radius: 2em 0 0 2em ;
+    }
+    .result__section {
+        box-shadow: 9px 9px 9px 0 var(--text);
+        border-radius: 0 2em 2em 0;
+    }
+
+     h1 {
+        font-size: 1.5rem;
+     }
 }
